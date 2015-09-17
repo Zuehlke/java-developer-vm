@@ -34,6 +34,16 @@ check_chefdk() {
   fi
 }
 
+check_git() {
+  big_step "Checking Git..."
+  if [[ $(which git) ]]; then
+    echo "Git already installed"
+  else
+    step "Installing Git"
+    sudo apt-get install git -y
+  fi
+}
+
 symlink_self() {
   big_step "Symlinking 'update-vm'..."
   sudo ln -sf $SCRIPT_FILE /usr/local/bin/update-vm
@@ -89,6 +99,7 @@ verify_vm() {
 if [[ "$1" == "--verify-only" ]]; then
   verify_vm
 else
+  check_git
   check_chefdk
   symlink_self
   [[ "$1" == "--pull" ]] && update_repo
