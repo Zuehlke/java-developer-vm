@@ -7,5 +7,6 @@
 include_recipe 'vm::base'
 
 #
-# TODO: add and include your own recipes here
+# add and include your own recipes here
 #
+include_recipe 'vm::java'
