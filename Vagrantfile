@@ -4,7 +4,7 @@ Vagrant::configure("2") do |config|
   #
   # define the Linux developer VM
   #
-  config.vm.define :"linux-devbox" do | devbox_config |
+  config.vm.define :"java-devbox" do | devbox_config |
 
     # configure the basebox
     devbox_config.vm.box = "boxcutter/ubuntu1404-desktop"
@@ -15,13 +15,13 @@ Vagrant::configure("2") do |config|
     end
 
     # set the hostname
-    devbox_config.vm.hostname = "linux-devbox.local"
+    devbox_config.vm.hostname = "java-devbox.local"
 
     # virtualbox customizations
     devbox_config.vm.provider :virtualbox do |vbox, override|
       vbox.customize ["modifyvm", :id,
-        "--name", "linux-devbox",
-        "--memory", 512,
+        "--name", "java-devbox",
+        "--memory", 2048,
         "--cpus", 4
       ]
       # yes we have a gui
