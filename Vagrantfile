@@ -34,7 +34,8 @@ Vagrant::configure("2") do |config|
     # Ensure we cache as much as possible
     if Vagrant.has_plugin?("vagrant-cachier")
       devbox_config.cache.enable :generic, {
-        "chef_file_cache" => { cache_dir: "/home/vagrant/.chef/local-mode-cache/cache" }
+        "chef_file_cache" => { cache_dir: "/home/vagrant/.chef/local-mode-cache/cache" },
+        "m2_repo" => { cache_dir: "/home/vagrant/.m2/repository" },
       }
     end
   end
