@@ -10,4 +10,5 @@ include_recipe 'vm::base'
 # add and include your own recipes here
 #
 include_recipe 'vm::java'
+include_recipe 'vm::maven'
 include_recipe 'vm::eclipse'
