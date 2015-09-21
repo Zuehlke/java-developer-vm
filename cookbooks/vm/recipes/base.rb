@@ -29,8 +29,10 @@ file '/home/vagrant/Desktop/README' do
   mode '0644'
   action :create
   content <<-EOF
-Developer VM README
-===================
+# Developer VM README
+
+
+## Updating the VM
 
 For applying the current configuration to the VM:
 
@@ -43,5 +45,14 @@ For updating to the latest configuration and applying that:
 For verifying the current configuration without applying anything:
 
   * simply run `update-vm --verify-only`
+
+
+## Keyboard Layout
+
+In order to switch the keyboard layout please run:
+```
+sudo dpkg-reconfigure keyboard-configuration
+```
+
 EOF
 end
