@@ -1,9 +1,10 @@
 
-# Linux Developer VM Example
+# Java Developer VM Example
 
-[![Circle CI](https://circleci.com/gh/Zuehlke/linux-developer-vm/tree/master.svg?style=shield)](https://circleci.com/gh/Zuehlke/linux-developer-vm/tree/master)
+[![Circle CI](https://circleci.com/gh/tknerr/java-developer-vm/tree/master.svg?style=shield)](https://circleci.com/gh/tknerr/java-developer-vm/tree/master)
 
-A minimal example / template project for a Chef-managed Linux developer VM.
+A minimal example / template project for a Chef-managed Java developer VM,
+based on the [linux-developer-vm](https://github.com/Zuehlke/linux-developer-vm).
 
 It consists of two main parts:
 
@@ -11,7 +12,7 @@ It consists of two main parts:
    is installed, triggers the Chef run for updating the VM, and verifies the VM using a suite of
    [Serverspec](http://serverspec.org/) tests.
  * the `cookbooks/vm` cookbook, which contains the recipes to be applied to the VM and the
-   tests that come along with it. All your specific customizations go in there!
+   tests that come along with it.
 
 ## Prerequisites
 
@@ -22,18 +23,24 @@ installed.
 As the guy who will be building and customizing the initial developer VM package
 you will additionally need [Vagrant](http://www.vagrantup.com/) installed.
 
+## Java Developer Tools
+
+The Java Developer VM is based on Ubuntu 14.04 and includes:
+
+ * Git 1.9
+ * Oracle JDK 8
+ * Maven 3.1.1
+ * Eclipse Mars 4.5
+
+It also includes the ChefDK so it can be updated from within the VM.
+
 ## Usage
 
 In short:
 
- 1. fork it
- 2. customize it
- 3. package it
- 4. run it
-
-### Fork It
-
-Well, that's easy. The "Fork" button is right there...
+ 1. customize it
+ 2. package it
+ 3. run it
 
 ### Customize It
 
@@ -54,6 +61,8 @@ Once you have added some Chef recipes, provision the VM to see it in effect:
 ```
 $ vagrant provision
 ```
+
+**Note:** you may need to login and logout for some settings to take effect.
 
 Whenever something is done:
 ```
