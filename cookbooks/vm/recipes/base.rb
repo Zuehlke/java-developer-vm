@@ -20,39 +20,11 @@ directory '/home/vagrant/Desktop' do
   owner 'vagrant'
   group 'vagrant'
   mode '0755'
-  action :create
 end
 
-file '/home/vagrant/Desktop/README' do
+cookbook_file '/home/vagrant/Desktop/README.md' do
+  source 'README.md'
   owner 'vagrant'
   group 'vagrant'
   mode '0644'
-  action :create
-  content <<-EOF
-# Developer VM README
-
-
-## Updating the VM
-
-For applying the current configuration to the VM:
-
-  * simply run `update-vm`
-
-For updating to the latest configuration and applying that:
-
-  * simply run `update-vm --pull`
-
-For verifying the current configuration without applying anything:
-
-  * simply run `update-vm --verify-only`
-
-
-## Keyboard Layout
-
-In order to switch the keyboard layout please run:
-```
-sudo dpkg-reconfigure keyboard-configuration
-```
-
-EOF
 end
