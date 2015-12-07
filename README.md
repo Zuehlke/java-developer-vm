@@ -1,7 +1,7 @@
 
 # Java Developer VM Example
 
-[![Circle CI](https://circleci.com/gh/tknerr/java-developer-vm/tree/master.svg?style=shield)](https://circleci.com/gh/tknerr/java-developer-vm/tree/master)
+[![Circle CI](https://circleci.com/gh/Zuehlke/java-developer-vm/tree/master.svg?style=shield)](https://circleci.com/gh/Zuehlke/java-developer-vm/tree/master)
 
 A minimal example / template project for a Chef-managed Java developer VM,
 based on the [linux-developer-vm](https://github.com/Zuehlke/linux-developer-vm).
