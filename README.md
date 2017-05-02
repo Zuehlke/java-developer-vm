@@ -12,7 +12,6 @@ A simple example for a Chef-managed Java developer VM, based on the [linux-devel
 The Java Developer VM is based on Ubuntu 16.04 and includes:
 
  * [ChefDK](https://downloads.chef.io/chef-dk/) - for managing / installing this developer VM
- * [VIM](http://www.vim.org/) - the most minimal development toolchain I could come up with ;-)
  * [Oracle JDK](https://www.oracle.com/java/) - obviously we need Java, in Oracle flavor please
  * [Maven](https://maven.apache.org/) - a build and dependency management system for Java
  * [Eclipse](https://eclipse.org) - the popular Java IDE
@@ -100,15 +99,23 @@ should see all tests passing:
 ==> default: vm::base
 ==> default:   places a README on the Desktop
 ==> default:
-==> default: vm::vim
-==> default:   installs Vi IMproved
+==> default: vm::eclipse
+==> default:   installs Eclipse Mars (4.5.0)
+==> default:
+==> default: vm::java
+==> default:   installs Oracle Java 8 update 31
+==> default:   sets JAVA_HOME correctly
+==> default:
+==> default: vm::maven
+==> default:   installs Maven 3.1.1
 ==> default:
 ==> default: update-vm.sh
 ==> default:   installs chefdk 1.3.32
 ==> default:   symlinks the update-vm script to /usr/local/bin/
 ==> default:
-==> default: Finished in 0.09228 seconds (files took 0.59519 seconds to load)
-==> default: 4 examples, 0 failures
+==> default: Finished in 0.43059 seconds (files took 0.79075 seconds to load)
+==> default: 7 examples, 0 failures
+
 ```
 
 If these are passing as expected, you can continue developing on the Chef recipes within this repo.
