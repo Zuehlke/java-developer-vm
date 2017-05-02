@@ -1,6 +1,5 @@
 source 'https://supermarket.chef.io'
 
-cookbook 'java', git: 'https://github.com/CatCalZone/java.git', ref: 'extract-to-tmp'
 cookbook 'eclipse', git: 'https://github.com/geocent-cookbooks/eclipse', ref: 'master'
 
 metadata
