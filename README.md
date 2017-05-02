@@ -12,7 +12,6 @@ A simple example for a Chef-managed Java developer VM, based on the [linux-devel
 The Java Developer VM is based on Ubuntu 16.04 and includes:
 
  * [ChefDK](https://downloads.chef.io/chef-dk/) - for managing / installing this developer VM
- * [VIM](http://www.vim.org/) - the most minimal development toolchain I could come up with ;-)
  * [Oracle JDK](https://www.oracle.com/java/) - obviously we need Java, in Oracle flavor please
  * [Maven](https://maven.apache.org/) - a build and dependency management system for Java
  * [Eclipse](https://eclipse.org) - the popular Java IDE
