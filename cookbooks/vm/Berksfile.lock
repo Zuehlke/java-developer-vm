@@ -1,0 +1,41 @@
+DEPENDENCIES
+  eclipse
+    git: https://github.com/geocent-cookbooks/eclipse
+    revision: f75e18bacdc714f6ac5369abdfd809feac7f3b10
+    ref: master
+  vm
+    path: .
+    metadata: true
+
+GRAPH
+  apt (6.0.1)
+  ark (3.0.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  build-essential (8.0.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  eclipse (0.1.0)
+    ark (>= 0.0.0)
+    java (>= 0.0.0)
+  homebrew (4.1.0)
+  java (1.49.0)
+    apt (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    windows (>= 0.0.0)
+  maven (5.0.0)
+    ark (>= 1.0)
+    java (>= 1.38)
+  mingw (2.0.1)
+    seven_zip (>= 0.0.0)
+  ohai (5.0.4)
+  seven_zip (2.0.2)
+    windows (>= 1.2.2)
+  vm (0.1.0)
+    apt (= 6.0.1)
+    eclipse (= 0.1.0)
+    java (= 1.49.0)
+    maven (= 5.0.0)
+  windows (3.0.5)
+    ohai (>= 4.0.0)
