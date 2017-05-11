@@ -4,7 +4,7 @@
 
 The initial release of the Java Developer VM, including:
 
- * ChefDK 1.3.32
+ * ChefDK 1.3.40
  * Oracle JDK 8u131
  * Maven 3.5.0
  * Eclipse Neon 4.6
