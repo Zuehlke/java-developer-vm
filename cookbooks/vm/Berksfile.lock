@@ -8,7 +8,7 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  apt (6.0.1)
+  apt (7.1.1)
   ark (3.0.0)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
@@ -33,7 +33,7 @@ GRAPH
   seven_zip (2.0.2)
     windows (>= 1.2.2)
   vm (0.1.0)
-    apt (= 6.0.1)
+    apt (= 7.1.1)
     eclipse (= 0.1.0)
     java (= 1.49.0)
     maven (= 5.0.0)
