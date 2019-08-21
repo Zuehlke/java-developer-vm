@@ -11,10 +11,10 @@ A simple example for a Chef-managed Java developer VM, based on the [linux-devel
 
 The Java Developer VM is based on Ubuntu 16.04 and includes:
 
- * [ChefDK](https://downloads.chef.io/chef-dk/) - for managing / installing this developer VM
- * [OpenJDK](https://adoptopenjdk.net/) - obviously we need Java
- * [Maven](https://maven.apache.org/) - a build and dependency management system for Java
- * [Eclipse](https://eclipse.org) - the popular Java IDE
+ * [ChefDK](https://downloads.chef.io/chef-dk/) 3.9.0 - for managing / installing this developer VM
+ * [OpenJDK](https://adoptopenjdk.net/) 11.0.4 - obviously we need Java
+ * [Maven](https://maven.apache.org/) 3.6.1 - a build and dependency management system for Java
+ * [Eclipse](https://eclipse.org) 4.12 - the popular Java IDE
 
 ### Tweaks and Settings
 
