@@ -12,7 +12,6 @@ chef_version '~> 14'
 
 supports 'ubuntu'
 
-depends 'apt', '7.1.1'
 depends 'java', '1.49.0'
 depends 'maven', '5.0.0'
 depends 'eclipse', '0.1.0'

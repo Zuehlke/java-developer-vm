@@ -1,6 +1,6 @@
 
 # update the apt cache
-include_recipe 'apt'
+apt_update
 
 # place a README on the Desktop
 directory '/home/vagrant/Desktop' do
