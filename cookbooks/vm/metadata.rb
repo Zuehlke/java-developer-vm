@@ -8,7 +8,7 @@ version '0.1.0'
 issues_url 'https://github.com/Zuehlke/java-developer-vm/issues'
 source_url 'https://github.com/Zuehlke/java-developer-vm'
 
-chef_version '~> 12'
+chef_version '~> 14'
 
 supports 'ubuntu'
 
