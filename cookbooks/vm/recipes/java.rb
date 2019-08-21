@@ -1,8 +1,9 @@
 
 # install java
-node.override['java']['jdk_version'] = '8'
-node.override['java']['install_flavor'] = 'oracle'
-node.override['java']['oracle']['accept_oracle_download_terms'] = true
-node.override['java']['jdk']['8']['x86_64']['url'] = 'http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz'
-node.override['java']['jdk']['8']['x86_64']['checksum'] = '62b215bdfb48bace523723cdbb2157c665e6a25429c73828a32f00e587301236'
+node.override['java']['jdk_version'] = '11'
+node.override['java']['install_flavor'] = 'adoptopenjdk'
+node.override['java']['adoptopenjdk']['variant'] = 'hotspot'
+node.override['java']['adoptopenjdk']['11']['x86_64']['hotspot']['url'] = 'https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.4%2B11/OpenJDK11U-jdk_x64_linux_hotspot_11.0.4_11.tar.gz'
+node.override['java']['adoptopenjdk']['11']['x86_64']['hotspot']['checksum'] = '90c33cf3f2ed0bd773f648815de7347e69cfbb3416ef3bf41616ab1c4aa0f5a8'
+
 include_recipe 'java'

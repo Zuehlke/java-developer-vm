@@ -1,9 +1,7 @@
 
-# install eclipse
-node.override['eclipse']['version'] = 'neon'
-# use the URL directly so it can be better cached (-> etag)
-node.override['eclipse']['url'] = 'http://ftp-stud.fht-esslingen.de/pub/Mirrors/eclipse/technology/epp/downloads/release/neon/3/eclipse-java-neon-3-linux-gtk-x86_64.tar.gz'
-# don't install any plugins yet
-node.override['eclipse']['plugins'] = []
-
-include_recipe 'eclipse'
+ark 'eclipse' do
+  version '2019-06'
+  url 'http://ftp-stud.fht-esslingen.de/pub/Mirrors/eclipse/technology/epp/downloads/release/2019-06/R/eclipse-java-2019-06-R-linux-gtk-x86_64.tar.gz'
+  checksum 'bafa1143704f0bba32ed933fdf0f620bb956221b2ebba8e2a822c43671d8acf4'
+  has_binaries ['eclipse']
+end
