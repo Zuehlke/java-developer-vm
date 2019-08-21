@@ -1,8 +1,3 @@
 source 'https://supermarket.chef.io'
 
-cookbook 'eclipse',
-  git: 'https://github.com/tknerr/cookbooks-eclipse',
-  ref: 'feature/chef-13-compatibility',
-  version: '2a8fb2613733cbec08dff1a2cb6984113629161b'
-
 metadata
