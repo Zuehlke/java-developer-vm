@@ -3,7 +3,7 @@ Vagrant::configure("2") do |config|
 
   # configure the basebox
   config.vm.box = "fasmat/ubuntu1804-desktop"
-  config.vm.box_version = "19.0218.1"
+  config.vm.box_version = "19.0729.1"
   config.vm.box_check_update = false
 
   # override the basebox when testing (an approximation) with docker
