@@ -4,7 +4,6 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  apt (7.2.0)
   ark (4.0.0)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
@@ -12,8 +11,7 @@ GRAPH
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
   homebrew (5.0.8)
-  java (1.49.0)
-    apt (>= 0.0.0)
+  java (4.3.0)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
   mingw (2.1.0)
@@ -22,5 +20,5 @@ GRAPH
     windows (>= 0.0.0)
   vm (0.1.0)
     ark (= 4.0.0)
-    java (= 1.49.0)
+    java (= 4.3.0)
   windows (6.0.0)
