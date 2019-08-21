@@ -1,7 +1,7 @@
 
 # install maven
-node.override['maven']['version'] = '3.5.0'
-node.override['maven']['url'] = 'https://archive.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz'
-node.override['maven']['checksum'] = 'beb91419245395bd69a4a6edad5ca3ec1a8b64e41457672dc687c173a495f034'
+node.override['maven']['version'] = '3.6.1'
+node.override['maven']['url'] = 'https://archive.apache.org/dist/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz'
+node.override['maven']['checksum'] = '2528c35a99c30f8940cc599ba15d34359d58bec57af58c1075519b8cd33b69e7'
 
 include_recipe 'maven'
